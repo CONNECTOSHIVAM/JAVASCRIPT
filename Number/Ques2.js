@@ -1,10 +1,8 @@
-// Q2. Write a function that rounds a number to the nearest whole number.
+// Q2.Write a function that rounds a number to the nearest whole number.
 
-function roundNum(a) {
-    const num = Math.round(a)
-    return isNaN(a) ? NaN : num;
+function roundNearestNumber(num){
+    let num1 = Math.round(num)
+    return num1
 }
 
-console.log(roundNum(4.5));
-console.log(roundNum(4.4));
-console.log(roundNum(-1.5));
+console.log(roundNearestNumber(15.4))

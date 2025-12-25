@@ -1,11 +1,22 @@
-//Q1. Write a function to convert a string containing a number (e.g., "123") into
-//  an actual number. If it is not a valid number, return NaN.
+// Q1.Write a function to convert a string containing a number (e.g., "123")
+//  into an actual number. If it is not a valid number, return NaN.
 
-function strToNum(a) {
-    let num = Number(a)
+// function strToNumber(num){
+//     num1 = parseInt(num)
+//     if(typeof(num1) === 'number'){
+//         console.log(num1)
+//     }
+//     else{
+//         return NaN
+//     }
+// }
 
-    return isNaN(num) ? NaN : num;
+// strToNumber('fgh');
+
+function convertToNumber(str){
+    const number =Number(str);
+    return isNaN(number)?NaN:number;
 }
 
-console.log(strToNum('123'))
-console.log(strToNum('myClass'))
+// console.log(convertToNumber('12.3'));
+console.log(convertToNumber('abc'));
