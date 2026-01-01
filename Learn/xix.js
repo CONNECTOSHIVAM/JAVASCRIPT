@@ -3,9 +3,15 @@
 // console.log(process.pid);
 // console.log(process.env.NODE_ENV)
 
-const production = ["Apple", "banana", "Orange", "grape", "APPLE"];
-const newArr = []
-for (let item of production){
-    newArr.push(item.toLowerCase())
-}
-console.log(newArr)
+// const production = ["Apple", "banana", "Orange", "grape", "APPLE"];
+// const newArr = []
+// for (let item of production){
+//     newArr.push(item.toLowerCase())
+// }
+// console.log(newArr)
+
+let a = "07:45"
+
+const [x,y] = a.split(':').map(Number);
+console.log(x)
+console.log(y)
