@@ -10,8 +10,11 @@
 // }
 // console.log(newArr)
 
-let a = "07:45"
+// let a = "07:45"
 
-const [x,y] = a.split(':').map(Number);
-console.log(x)
-console.log(y)
+// const [x,y] = a.split(':').map(Number);
+// console.log(x)
+// console.log(y)
+
+const age = parseInt("yueos");
+console.log(age)
