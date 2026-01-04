@@ -3,23 +3,19 @@
 //  available boolean type.Write a program to convert the price from string to number.
 // Formate price as a currency.
 
-function formatPriceFromApiResponse(apiResponse) {
-    //convert the price string to Number .
-    const priceAsNumber = parseFloat(apiResponse.price);
-    //Format price to the currency string.
-    const formattedPrice = `$${priceAsNumber.toFixed(2)}`;
+function formatPriceCurrency(apiResponse) {
 
-    return formattedPrice
+    const priceInNumber = parseFloat(apiResponse.price)
 
+    const finalPrice = `$${priceInNumber.toFixed(2)}`;
+    return finalPrice
 }
 
 const apiResponse = {
-    productName: "Car",
-    model: "BMW-M5",
-    productId: 1235,
-    price: "1654641.46",
-    country: "India",
+    productId: 1234,
+    productName: "bed",
+    price: "4323.50",
     available: true
 }
 
-console.log(formatPriceFromApiResponse(apiResponse));
+console.log(formatPriceCurrency(apiResponse))
