@@ -1,7 +1,7 @@
 // Q2. Create a map that groups events based on their city.
 
-function groupEventByCity(events){
-  return events.map((event)=>(""))
+function groupEventByCity(events,city){
+  return events.filter((event)=>(city == event.city))
 }
 
 const events = [
@@ -10,4 +10,7 @@ const events = [
   { name: "Parade", city: "New York", lat: 40.730610, lng: -73.935242 }
 ];
 
-groupedCity = groupEventByCity(events)
+const myCity = "New York"
+
+groupedCity = groupEventByCity(events,myCity)
+console.log(groupedCity);
