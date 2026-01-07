@@ -26,4 +26,11 @@ const usersName = user.map((u)=>u.name)
 console.log((usersName));
 
 
+// Q. make a cube of array.
+
+const arr3 = [1, 2, 3, 4]
+
+const cubedArr = arr3.map((item)=>(item**3));
+console.log(cubedArr);
+
 
