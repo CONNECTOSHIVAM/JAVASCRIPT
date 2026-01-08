@@ -16,5 +16,8 @@
 // console.log(x)
 // console.log(y)
 
-const age = parseInt("yueos");
-console.log(age)
+// const age = parseInt("yueos");
+// console.log(age)
+
+ const date = new Date().toISOString()
+console.log(date);
