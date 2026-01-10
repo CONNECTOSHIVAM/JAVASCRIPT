@@ -1,28 +1,28 @@
 // Q2.Write a function groupByCategory that takes an array of blog post objects and
 //  groups them by their categories.
 
-function groupByCategory(posts) {
-    const group = {}
+function groupByCategory(posts){
 
-    posts.forEach((post) => {
-        if (!group[post.category]) {
-            group[post.category] = []
+    const grouped = {}
+
+    posts.forEach((post)=>{
+        if(!grouped[post.category]){
+            grouped[post.category] = []
         }
 
-        group[post.category].push(post.title)
-    });
+        grouped[post.category].push(post.title)
+    })
 
-    return group
+    return grouped
+
 }
 
 const posts = [
     { title: "Learn JS", category: "Programming" },
-    { title: "CSS Tips", category: "Web Dev" },
+    { title: "CSS Tips", category: "WebDev" },
     { title: "Master React", category: "Programming" },
-    { title: "HTML Basics", category: "Web Dev" }
+    { title: "HTML Basics", category: "WebDev" }
 ]
 
-const result = groupByCategory(posts);
-console.log(result);
-
-
+const result = groupByCategory(posts)
+console.log(result)
