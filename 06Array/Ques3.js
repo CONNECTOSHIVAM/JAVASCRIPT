@@ -10,13 +10,13 @@ function sortProducts(products,sortBy,order){
             if(a.name.toLowerCase() < b.name.toLowerCase())return order === "asc"? -1 : 1
             if(a.name.toLowerCase() > b.name.toLowerCase())return order === "asc"? 1 : -1
             return 0
-        }else (sortBy === "price")
+        }else if(sortBy === "price")
         {
-            return order === 'asc'? a.price - b.price : b.price - a.price
+            return order === "asc" ? a.price - b.price : b.price - a.price;
         }
     })
-
 }
+
 
 
 const products = [
@@ -25,9 +25,10 @@ const products = [
   { name: "Hat", price: 300 },
   { name: "Jeans", price: 1000 }
 ];
-const sortBy = "price"
+const sortBy = "name"
 const order = "asc"
 
-const sorttedList = sortProducts(products,sortBy,order)
-console.log(sorttedList);
+const sortedList = sortedList(products,sortBy,order)
+console.log(sortedList);
+
 
