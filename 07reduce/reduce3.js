@@ -1,13 +1,14 @@
 // Q4.  Frequency Map (counting)
 
-function getFruitsCount(fruits) {
-
-    return fruits.reduce((acc, fruit) => {
+function getFruitsCount(arr){
+    return arr.reduce((acc,fruit)=>{
         acc[fruit] = (acc[fruit] || 0) + 1
         return acc
-    }, {})
+    },{})
 }
 
-const fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
-const fruitsC = getFruitsCount(fruits)
-console.log(fruitsC);
+
+const arr = ["apple", "banana", "apple", "orange", "banana", "apple"];
+const fruitsWithCount = getFruitsCount(arr)
+console.log(fruitsWithCount);
+
