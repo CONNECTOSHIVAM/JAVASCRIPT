@@ -1,11 +1,15 @@
 // Q5.Object reshaping (API response transform)
 
-function objectReshaping(users){
-    return users.map((user)=> ({id: user._id,fullName: user.fname+ " " + user.lname}))
+function employeeList(employee){
+   return employee.map((user)=>({_id: user._id,fullName: user.fname + " " + user.lname}))
 }
-const users = [
+
+
+const employee = [
   { _id: 101, fname: "Shivam", lname: "Kumar" },
   { _id: 102, fname: "Amit", lname: "Shah" }
 ]
 
-console.log(objectReshaping(users));
+console.log(employeeList(employee));
+
+
