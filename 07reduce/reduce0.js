@@ -1,13 +1,13 @@
 //Q. sum of the provided arrays.
 
-
 function sumOfArr(arr){
-    return arr.reduce((acc,curr)=>{
-        return acc + curr
-    },0)
+
+    return arr.reduce((acc,item)=>acc+item,0)
 }
 
-const arr = [2,3,5,7]
 
-const sum = sumOfArr(arr)
-console.log(sum);
+
+const arr = [1,2,3,4,5]
+
+console.log(sumOfArr(arr));
+
