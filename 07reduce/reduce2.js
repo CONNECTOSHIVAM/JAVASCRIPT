@@ -2,9 +2,9 @@
 
 
 function sentenceBuilder(lines){
-    return lines.reduce((acc,word)=>{
-        return acc + " " + word
-    }) +"!";
+    return lines.reduce((acc,line)=>{
+        return acc = acc + ` ${line} `
+    })+"!"
 }
 
 const line = ["I", "love", "reduce", "so", "much"]
