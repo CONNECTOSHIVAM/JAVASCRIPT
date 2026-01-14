@@ -1,7 +1,7 @@
 // Q2. find the maximum value using reduce methoods.
 
 function getMaximum(nums){
-    return nums.reduce((acc,item)=> acc > item ? acc : item,0)
+    return nums.reduce((acc,item)=> acc > item ? acc : item)
 }
 
 
