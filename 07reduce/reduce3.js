@@ -1,8 +1,9 @@
 // Q4.  Frequency Map (counting)
 
-function getFruitsCount(arr){
+function getFruitsCount(arr)
+{
     return arr.reduce((acc,fruit)=>{
-        acc[fruit] = (acc[fruit] || 0) + 1
+        acc[fruit] = (acc[fruit] || 0)+1
         return acc
     },{})
 }
