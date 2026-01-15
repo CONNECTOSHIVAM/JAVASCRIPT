@@ -1,4 +1,4 @@
-// Q6.Group by property (industry real use)
+// Q7.Group by property (industry real use)
 
 function groupByProperty(users){
 
