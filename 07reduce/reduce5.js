@@ -3,7 +3,7 @@
 function flattenArray(matrix){
 
     return matrix.reduce((acc,a)=>{
-         acc.push(...a)
+         acc.push(...a) // you can also solve through the concat methods.
          return acc
     },[])
 }
