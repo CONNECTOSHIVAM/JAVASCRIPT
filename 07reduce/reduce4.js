@@ -1,10 +1,9 @@
 // Q5. Partitioning (2 buckets).
 
 function partitionEvenOdd(nums){
-
     return nums.reduce((acc,item)=>{
-        
-        if(item%2===0){
+
+        if(item%2==0){
             acc.even.push(item)
         }else{
             acc.odd.push(item)
