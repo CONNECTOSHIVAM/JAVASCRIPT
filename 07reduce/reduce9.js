@@ -1,4 +1,4 @@
-// Q9.Reduce as “function composition” (pure scientist).
+// Q10.Reduce as “function composition” (pure scientist).
 
 function composition(ops){
     return ops.reduce((acc,item)=>{
