@@ -1,4 +1,4 @@
-// Q6. Print all even numbers till N
+// Q5. Print all even numbers till N
 
 function getEvenNumTillN(N){
 
