@@ -2,14 +2,11 @@
 
 function getEvenNumTillN(N){
 
-    let i = 1;
+    let i = 2;
     while(i<=N)
         {
-            if(i%2==0)
-            {
-                console.log(i);
-            }
-            i++;
+          console.log(i);
+          i += 2      
         } 
 }
 
