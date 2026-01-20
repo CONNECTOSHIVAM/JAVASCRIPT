@@ -1,19 +1,18 @@
 // Q2. Read N numbers and print their maximum
 
-function getMaximum(arr){
+function findMax(arrN)
+{
     let max = -Infinity
-
-    for(let i=0;i<arr.length;i++)
+    for(let i = 1; i<arrN.length; i++)
     {
-        if(arr[i]>max)
+        if(arrN[i]>max)
         {
-            max = arr[i]
+            max = arrN[i]
         }
     }
     return max
 }
 
-
-const arr = [1,2,3,8,9,2,75,63,12]
-console.log(getMaximum(arr));
+const arrN = [12,23,14,56,89,75];
+console.log(findMax(arrN));
 
