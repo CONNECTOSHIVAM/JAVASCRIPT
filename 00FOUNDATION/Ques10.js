@@ -1,8 +1,8 @@
 // Q10. Convert Celsius to Fahrenheit
 
-function convertCelsiusToFahrenheit(tempInCelsius){
+function convertCelsiusToFahrenheit(celsius){
 
-    return (tempInCelsius*9/5)+32
+    return (celsius*9/5)+32
 }
 
 
