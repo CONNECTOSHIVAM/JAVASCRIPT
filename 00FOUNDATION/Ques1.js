@@ -1,15 +1,15 @@
 // Q1. Read N numbers and print their sum
 
-function additionOfArr(arr){
-    let sums = 0
-    for(let i= 0;i<arr.length;i++)
+function sumOfN(n)
+{
+    let sum = 0
+    for(let i=1;i<=n;i++)
     {
-        sums += arr[i]
+       sum += i
     }
-    return sums
-
+    return sum
 }
 
 
-const arr = [1,2,3,8,9]
-console.log(additionOfArr(arr));
+const n = 10;
+console.log(sumOfN(n));
