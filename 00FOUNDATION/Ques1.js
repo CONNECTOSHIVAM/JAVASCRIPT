@@ -3,9 +3,16 @@
 function sumOfN(n)
 {
     let sum = 0
-    for(let i=1;i<=n;i++)
+    // APPROACH 1:
+    // for(let i=1;i<=n;i++)
+    // {
+    //    sum += i
+    // }
+    // APPROACH 2:
+    while(i<=10)
     {
-       sum += i
+        sum += i
+        i++;
     }
     return sum
 }
