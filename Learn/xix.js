@@ -22,6 +22,6 @@
 //  const date = new Date().toISOString()
 // console.log(date);
 
-console.log(Math.floor(6/10));
-console.log(525/10);
+console.log(Math.floor(6%10));
+// console.log(525/10);
 
