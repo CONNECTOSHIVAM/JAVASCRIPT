@@ -1,0 +1,1 @@
+// Q2.Print all prime numbers till N
