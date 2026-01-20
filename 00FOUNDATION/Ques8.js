@@ -2,15 +2,13 @@
 
 function reverseString(str){
 
-
-    let reversed = ""
-    for(let i =str.length-1; i>=0;i--)
+    let newStr = ""
+    for(let i = str.length-1; i>=0; i--)
     {
-        reversed += str[i]
+        newStr += str[i]
     }
-    return reversed
+    return newStr
 }
-
 
 const str = "Hello"
 console.log(reverseString(str));
