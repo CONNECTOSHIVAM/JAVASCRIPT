@@ -3,12 +3,23 @@
 function findMax(arrN)
 {
     let max = -Infinity
-    for(let i = 1; i<arrN.length; i++)
+    // APPROACH 1:
+    // for(let i = 1; i<arrN.length; i++)
+    // {
+    //     if(arrN[i]>max)
+    //     {
+    //         max = arrN[i]
+    //     }
+    // }
+    // APPROACH 2:
+    let i = 1;
+    while(i<arrN.length)
     {
-        if(arrN[i]>max)
+        if(arrN[i] > max)
         {
             max = arrN[i]
         }
+        i++;
     }
     return max
 }
