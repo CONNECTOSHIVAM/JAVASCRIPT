@@ -13,13 +13,15 @@
 // APPROACH 2:
 
 function countDigitsInNum(digits){
+
     digits = Math.abs(digits)
-    count = 0;
+    let count = 0;
     while(digits>0)
     {
-        digits = Math.floor(digits/10);
+        digits = Math.floor(digits/10)
         count++;
     }
+
     return count
 }
 
