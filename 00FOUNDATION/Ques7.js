@@ -1,17 +1,31 @@
 // Q7. Reverse a number
 
+// function reverseTheNumber(num){
+//    let digits = Math.abs(num)
+//    let rev = 0;
+
+//    while(digits>0)
+//    {
+//       const lastDigit = digits%10
+//       rev = rev * 10 + lastDigit
+//       digits = Math.floor(digits / 10)
+//    }
+//    return num < 0? -rev : rev
+
+// }
+
 function reverseTheNumber(num){
-   let digits = Math.abs(num)
-   let rev = 0;
 
-   while(digits>0)
+   num = Math.abs(num)
+   let rev = 0
+   while(num > 0)
    {
-      const lastDigit = digits%10
-      rev = rev * 10 + lastDigit
-      digits = Math.floor(digits / 10)
+      n = num % 10
+      rev = rev * 10 + n
+      num = Math.floor(num/10)
    }
-   return num < 0? -rev : rev
 
+   return rev
 }
 
 const num = 52352;
