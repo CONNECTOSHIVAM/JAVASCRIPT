@@ -2,9 +2,10 @@
 
 function findLcm(a,b)
 {
-    let max = Math.max(a,b);
+    let max = Math.max(a,b)
     let min = Math.min(a,b)
-    for(let i = max; i <= a*b; i += max)
+
+    for(let i = max; i<= a*b;i+=max)
     {
         if(i%min===0)
         {
@@ -13,6 +14,8 @@ function findLcm(a,b)
     }
     return a*b
 }
+
+
 
 
 
