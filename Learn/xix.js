@@ -29,6 +29,7 @@
 const a = 12345
 
 console.log(String(a).length);
+console.log(Math.sqrt(5));
 
 
 
