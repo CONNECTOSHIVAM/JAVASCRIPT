@@ -14,7 +14,5 @@ function findTheMax(arr)
 }
 
 
-
-
 const arr = [12,53,75,96,45]
 console.log(findTheMax(arr));
