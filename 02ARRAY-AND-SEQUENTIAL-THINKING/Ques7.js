@@ -1,4 +1,4 @@
-// Q7. Left rotate the array by the K places.
+// Q7. Left rotate the array by the K places. || using the brute force.
 
 function rotateTheArrayByK(arr, k)
 {
