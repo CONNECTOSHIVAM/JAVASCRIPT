@@ -12,37 +12,59 @@
 // }
 
 // Appraoch 2:
-function reverseTheArr(arr)
-{
-    let start = 0;
-    let end = arr.length-1
-    let temp;
-    while(start<end)
-    {
-       temp = arr[start]
-       arr[start] = arr[end]
-       arr[end] = temp
-       start++;
-       end--;
-    }
+// function reverseTheArr(arr)
+// {
+//     let start = 0;
+//     let end = arr.length-1
+//     let temp;
+//     while(start<end)
+//     {
+//        temp = arr[start]
+//        arr[start] = arr[end]
+//        arr[end] = temp
+//        start++;
+//        end--;
+//     }
     
-    return arr 
-}
+//     return arr 
+// }
 
 // Approach 3:
-function reverseTheArr(arr)
-{
-    let end = arr.length-1
-    for(let i=0; i<arr.length;i++)
+
+function reverseTheArr(arr){
+
+    let end = arr.length-1;
+    for(let start = 0; start < end;start++,end--)
     {
-        if(i<arr.length)
+        if(start<end)
         {
-            arr[i]=arr[end]
-            arr[end]=arr[i]
-            end--;
+            let temp = arr[start]
+            arr[start] = arr[end]
+            arr[end] = temp
+            
         }
     }
     return arr 
 }
+
+
 const arr = [12,53,75,96,45]
 console.log(reverseTheArr(arr));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
