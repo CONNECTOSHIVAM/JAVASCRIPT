@@ -13,12 +13,9 @@ function rotateTheArrayByK(arr, k)
    {
        arr[i-k] = arr[i]
    }
-   
-   let j = 0
    for(let i = n-k;i<n;i++)
    {
-      arr[i] = temp[j]
-      j++
+      arr[i] = temp[i-(n-k)]
    }
 
    return arr
