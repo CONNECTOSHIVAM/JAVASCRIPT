@@ -30,6 +30,8 @@ const a = 12345
 
 console.log(String(a).length);
 console.log(Math.sqrt(5));
+console.log(2%5);
+
 
 
 
